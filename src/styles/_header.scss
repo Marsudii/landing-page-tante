@@ -1,0 +1,31 @@
+.header {
+    width: 100%;
+    padding: $header-padding;
+    box-sizing: border-box;
+    position: fixed;
+    background: $nav-gradient;
+    z-index: 90;
+    transform: translate(0, -100%);
+    opacity: 0;
+}
+
+//$responsive-max-w: 966px;
+/*@media (max-width: ) {
+    .header {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}*/
+@media (max-width: 1010px) {
+    .header {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media (max-width: $responsive-max-w) {
+    .header {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

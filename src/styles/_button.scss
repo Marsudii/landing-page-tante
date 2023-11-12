@@ -1,0 +1,50 @@
+.button {
+    background-color: $light-blue;
+    color: $main-font-color;
+    font-size: $nav-font-size;
+    border-style: none;
+    border-radius: $button-radius;
+    padding: $button-padding;
+    font-weight: bold;
+    font-family: $main-font;
+    text-align: center;
+
+    &--medium {
+        width: 100%;
+        font-size: $section-font-size;
+    }
+
+    &--big {
+        font-size: $button-big-font-size;
+        width: 100%;
+        margin-top: $big-button-margin;
+        padding: $big-button-padding;
+    }
+
+    &--menu {
+        margin: 15px 5%;
+        width: 90%;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        transition: .3s ease;
+        background-color: #0b5094;
+    }
+
+    &:active {
+        transition: .3s ease;
+        background-color: $light-blue;
+    }
+}
+
+@media (max-width: 403px) {
+    .button{
+        &--big {
+            font-size: $button-big-font-size - 0.5;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+.benefits {
+    background-color: $main-background-color;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 100px;
+    overflow: hidden;
+
+    &__content {
+        opacity: 0;
+        margin: 25px 25px;
+        width: 100%;
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__icon {
+        height: 70px;
+    }
+
+    &__name {
+        margin: 20px 0;
+        font-family: $main-font;
+        font-size: $section-font-size;
+        text-align: center;
+        color: $light-blue;
+    }
+}
+
+@media (max-width: $responsive-max-w) {
+    .benefits {
+        padding: 20px;
+        &__content {
+            width: 100%;
+        }
+    }
+}

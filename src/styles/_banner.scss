@@ -1,0 +1,82 @@
+.banner {
+    width: 100%;
+    background: $main-gradient;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: $banner-padding;
+    position: relative;
+
+    &__image {
+        width: 100%;
+        max-width: $banner-image-max-w;
+        margin: $banner-image-margin;
+        opacity: 0;
+        transform: translate(0, 100%);
+    }
+
+    &__info {
+        max-width: $banner-info-max-w;
+    }
+
+    &__text {
+        opacity: 0;
+        margin: $banner-text-margin;
+        font-family: $main-font;
+        font-size: $big-font-size;
+        font-weight: bold;
+        color: $main-font-color;
+    }
+
+    &__button {
+        transform: translate(0, -100%);
+        opacity: 0;
+    }
+}
+
+@media (max-width: $responsive-max-w) {
+    .banner {
+        background: radial-gradient(
+            80% 20% at 50% 30%,
+            #273788 0%,
+            #094f94 0.01%,
+            #0a0a0e 71.64%,
+            #000000 87.58%
+        );
+
+        &__image {
+            max-width: 250px;
+        }
+
+
+        &__text {
+            font-size: $medium-font-size;
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 978px) {
+    .banner {
+        background: radial-gradient(
+            80% 20% at 50% 30%,
+            #273788 0%,
+            #094f94 0.01%,
+            #0a0a0e 71.64%,
+            #000000 87.58%
+        );
+    }
+}
+
+@media (max-width: 403px) {
+    .banner {
+        &__text {
+            font-size: $medium-font-size - 0.5;
+            text-align: center;
+        }
+        
+    }
+}
+

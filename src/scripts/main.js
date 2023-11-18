@@ -4,13 +4,13 @@ window.addEventListener('load', function () {
     history.replaceState({}, '', window.location.href.slice(0, -1));
   }
 
-  const redirectBtn = document.querySelectorAll('.button--go');
-
-  redirectBtn.forEach(function (elem) {
-    elem.addEventListener('click', function () {
-      window.location.href = "https://stban2703.github.io/Samsung-Mobile-Project/product.html?VbDwvh1xMyJKdZuiQrk2-Galaxy_S20";
-    });
-  });
+  // const redirectBtn = document.querySelectorAll('.button--go');
+  //
+  // redirectBtn.forEach(function (elem) {
+  //   elem.addEventListener('click', function () {
+  //     window.location.href = "/";
+  //   });
+  // });
 
   const html = document.querySelector("html");
 

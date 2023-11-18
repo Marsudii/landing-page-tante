@@ -540,7 +540,9 @@ input[type=button] {
 }
 
 .benefits__icon {
-  height: 70px;
+  /*height: 70px;*/
+  max-width: 100%;
+  height: auto;
 }
 
 .benefits__name {
@@ -851,7 +853,7 @@ input[type=button] {
 }
 
 .feature__zoom-image {
-  background: url("../images/zoomcatinteraction.png") no-repeat #fff;
+  background: url("../images/zoomcatinteraction.webp") no-repeat #fff;
   width: 200px;
   height: 200px;
   -webkit-box-shadow: 0 5px 10px -2px rgba(0, 0, 0, 0.3);

@@ -2,7 +2,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/u1578775/repositories/landing-page-tante
+    - export DEPLOYPATH=/home/u1578775/public_html/SUBDOMAIN/landing-page-tante
     - /bin/cp -R .vscode $DEPLOYPATH
     - /bin/cp -R assets $DEPLOYPATH
     - /bin/cp -R css $DEPLOYPATH
